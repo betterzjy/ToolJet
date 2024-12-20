@@ -4,7 +4,7 @@ import useRouter from '@/_hooks/use-router';
 import { ToolTip } from '@/_components/ToolTip';
 import { Profile } from '@/_components/Profile';
 import { NotificationCenter } from '@/_components/NotificationCenter';
-import Logo from '@assets/images/rocket.svg';
+import Logo from '@assets/images/guoxin_logo.svg';
 import Header from '../Header';
 import { authenticationService } from '@/_services';
 import SolidIcon from '../Icon/SolidIcons';
@@ -19,7 +19,7 @@ function Layout({
   darkMode,
   enableCollapsibleSidebar = false,
   collapseSidebar = false,
-  toggleCollapsibleSidebar = () => {},
+  toggleCollapsibleSidebar = () => { },
 }) {
   const router = useRouter();
   const currentUserValue = authenticationService.currentSessionValue;
@@ -70,10 +70,9 @@ function Layout({
                     <Link
                       to="/"
                       onClick={(event) => checkForUnsavedChanges(getPrivateRoute('dashboard'), event)}
-                      className={`tj-leftsidebar-icon-items  ${
-                        (router.pathname === '/:workspaceId' || router.pathname === getPrivateRoute('dashboard')) &&
+                      className={`tj-leftsidebar-icon-items  ${(router.pathname === '/:workspaceId' || router.pathname === getPrivateRoute('dashboard')) &&
                         `current-seleted-route`
-                      }`}
+                        }`}
                       data-cy="icon-dashboard"
                     >
                       <SolidIcon
@@ -93,9 +92,8 @@ function Layout({
                       <Link
                         to={getPrivateRoute('database')}
                         onClick={(event) => checkForUnsavedChanges(getPrivateRoute('database'), event)}
-                        className={`tj-leftsidebar-icon-items  ${
-                          router.pathname === getPrivateRoute('database') && `current-seleted-route`
-                        }`}
+                        className={`tj-leftsidebar-icon-items  ${router.pathname === getPrivateRoute('database') && `current-seleted-route`
+                          }`}
                         data-cy="icon-database"
                       >
                         <SolidIcon
@@ -118,9 +116,8 @@ function Layout({
                       <Link
                         to={getPrivateRoute('data_sources')}
                         onClick={(event) => checkForUnsavedChanges(getPrivateRoute('data_sources'), event)}
-                        className={`tj-leftsidebar-icon-items  ${
-                          router.pathname === getPrivateRoute('data_sources') && `current-seleted-route`
-                        }`}
+                        className={`tj-leftsidebar-icon-items  ${router.pathname === getPrivateRoute('data_sources') && `current-seleted-route`
+                          }`}
                         data-cy="icon-global-datasources"
                       >
                         <SolidIcon
@@ -137,9 +134,8 @@ function Layout({
                       <Link
                         to={getPrivateRoute('workspace_constants')}
                         onClick={(event) => checkForUnsavedChanges(getPrivateRoute('workspace_constants'), event)}
-                        className={`tj-leftsidebar-icon-items  ${
-                          router.pathname === getPrivateRoute('workspace_constants') && `current-seleted-route`
-                        }`}
+                        className={`tj-leftsidebar-icon-items  ${router.pathname === getPrivateRoute('workspace_constants') && `current-seleted-route`
+                          }`}
                         data-cy="icon-workspace-constants"
                       >
                         <SolidIcon

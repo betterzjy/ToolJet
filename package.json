@@ -19,7 +19,10 @@
   },
   "devDependencies": {
     "@tooljet/cli": "^0.0.13",
+    "@typescript-eslint/eslint-plugin": "^8.18.1",
     "eslint": "^8.56.0",
+    "eslint-plugin-react": "^7.37.2",
+    "eslint-plugin-storybook": "^0.8.0",
     "husky": "^8.0.3",
     "lint-staged": "^13.1.2"
   },
@@ -52,5 +55,8 @@
     "heroku-postbuild": "./heroku-postbuild.sh",
     "prepare": "husky install",
     "update-version": "node update-version.js"
+  },
+  "dependencies": {
+    "eslint-plugin-react-hooks": "^5.1.0"
   }
 }

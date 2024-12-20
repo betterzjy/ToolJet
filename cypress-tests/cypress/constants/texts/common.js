@@ -92,7 +92,7 @@ export const commonText = {
   onboardingPageSubHeader: "This information will help us improve ToolJet.",
   passwordHelperText: "Password must be at least 5 characters",
   continueButton: "Continue",
-  resetPasswordButton: "Reset password",
+  resetPasswordButton: "重置密码",
   setUpWorkspaceHeader: "Set up your workspace",
   userRolePageHeader: "What best describes your role?",
   sizeOftheCompanyHeader: "What is the size of your company?",
@@ -117,7 +117,7 @@ export const commonText = {
   resetPasswordLinkButton: " Send a reset link",
   passwordResetEmailToast:
     "Please check your email/inbox for the password reset link",
-  passwordResetPageHeader: "Reset Password",
+  passwordResetPageHeader: "重置密码",
   passwordResetSuccessPageHeader: "Password has been reset",
   newPasswordInputLabel: "New Password",
   confirmPasswordInputFieldLabel: "Re-enter the password",

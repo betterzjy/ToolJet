@@ -1,7 +1,7 @@
 import React from 'react';
 import _, { isEmpty } from 'lodash';
 // eslint-disable-next-line import/no-unresolved
-import LogoIcon from '@assets/images/rocket.svg';
+import LogoIcon from '@assets/images/guoxin_logo.svg';
 import { Link } from 'react-router-dom';
 import { DarkModeToggle } from '@/_components/DarkModeToggle';
 import Header from './Header';

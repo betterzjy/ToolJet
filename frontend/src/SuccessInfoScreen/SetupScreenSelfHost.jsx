@@ -2,8 +2,8 @@ import React, { useState, useEffect } from 'react';
 import EnterIcon from '../../assets/images/onboardingassets/Icons/Enter';
 import { ButtonSolid } from '@/_components/AppButton';
 import OnbboardingFromSH from '../OnBoardingForm/OnbboardingFromSH';
-import LogoLightMode from '@assets/images/Logomark.svg';
-import LogoDarkMode from '@assets/images/Logomark-dark-mode.svg';
+import LogoLightMode from '@assets/images/Logomark_guoxin.svg';
+import LogoDarkMode from '@assets/images/Logomark_guoxin.svg';
 
 function SetupScreenSelfHost({ darkMode }) {
   const [showSelfHostOboarding, setShowSelfHostOboarding] = useState(false);
@@ -27,7 +27,7 @@ function SetupScreenSelfHost({ darkMode }) {
         <div className="sh-setup-banner">
           <div className="onboarding-navbar onboarding-navbar-layout setup-page-navbar">
             <div className="tooljet-nav-logo">
-              <Logo height="23" width="92" alt="tooljet logo" data-cy="page-logo" />
+              <Logo height="38" width="180" alt="tooljet logo" data-cy="page-logo" />
             </div>
           </div>
           {/* placeholders for image */}

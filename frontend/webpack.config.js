@@ -26,7 +26,7 @@ function stripTrailingSlash(str) {
 const plugins = [
   new HtmlWebpackPlugin({
     template: './src/index.ejs',
-    favicon: './assets/images/logo.svg',
+    favicon: './assets/images/guoxin_logo.svg',
     hash: environment === 'production',
   }),
   new CompressionPlugin({

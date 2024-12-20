@@ -9,8 +9,8 @@ import ContinueButtonSelfHost from './ContinueButtonSelfHost';
 import { getuserName } from '@/_helpers/utils';
 import { redirectToDashboard } from '@/_helpers/routes';
 import { ON_BOARDING_SIZE, ON_BOARDING_ROLES } from '@/_helpers/constants';
-import LogoLightMode from '@assets/images/Logomark.svg';
-import LogoDarkMode from '@assets/images/Logomark-dark-mode.svg';
+import LogoLightMode from '@assets/images/Logomark_guoxin.svg';
+import LogoDarkMode from '@assets/images/Logomark_guoxin.svg';
 import startsWith from 'lodash.startswith';
 import PhoneInput from 'react-phone-input-2';
 import 'react-phone-input-2/lib/style.css';
@@ -89,7 +89,7 @@ function OnbboardingFromSH({ darkMode }) {
     <div className="flex">
       <div className="onboarding-navbar onboarding-navbar-layout">
         <div className="tooljet-nav-logo">
-          <Logo height="23" width="92" alt="tooljet logo" data-cy="page-logo" />
+          <Logo height="38" width="180" alt="tooljet logo" data-cy="page-logo" />
         </div>
         <div></div>
         <div className="onboarding-checkpoints">

@@ -37,31 +37,31 @@ export class EmailService {
         context: templateData,
         from: this.FROM_EMAIL,
         attachments: [
-          {
-            filename: 'rocket.png',
-            path: join(__dirname, '../mails/assets/rocket.png'),
-            cid: 'rocket',
-          },
-          {
-            filename: 'twitter.png',
-            path: join(__dirname, '../mails/assets/twitter.png'),
-            cid: 'twitter',
-          },
-          {
-            filename: 'linkedin.png',
-            path: join(__dirname, '../mails/assets/linkedin.png'),
-            cid: 'linkedin',
-          },
-          {
-            filename: 'youtube.png',
-            path: join(__dirname, '../mails/assets/youtube.png'),
-            cid: 'youtube',
-          },
-          {
-            filename: 'github.png',
-            path: join(__dirname, '../mails/assets/github.png'),
-            cid: 'github',
-          },
+          // {
+          //   filename: 'rocket.png',
+          //   path: join(__dirname, '../mails/assets/rocket.png'),
+          //   cid: 'rocket',
+          // },
+          // {
+          //   filename: 'twitter.png',
+          //   path: join(__dirname, '../mails/assets/twitter.png'),
+          //   cid: 'twitter',
+          // },
+          // {
+          //   filename: 'linkedin.png',
+          //   path: join(__dirname, '../mails/assets/linkedin.png'),
+          //   cid: 'linkedin',
+          // },
+          // {
+          //   filename: 'youtube.png',
+          //   path: join(__dirname, '../mails/assets/youtube.png'),
+          //   cid: 'youtube',
+          // },
+          // {
+          //   filename: 'github.png',
+          //   path: join(__dirname, '../mails/assets/github.png'),
+          //   cid: 'github',
+          // },
         ],
       };
 
@@ -97,8 +97,8 @@ export class EmailService {
     const inviteUrl = generateInviteURL(invitationtoken, organizationInvitationToken, organizationId, null, redirectTo);
     const subject = isOrgInvite ? `Welcome to ${organizationName || 'ToolJet'}` : 'Set up your account!';
     const footerText = isOrgInvite
-      ? 'You have received this email as an invitation to join ToolJet’s workspace'
-      : 'You have received this email to confirm your email address';
+      ? '您收到这个邮件是因为您被其他用户邀请加入的轻应用平台Workspace'
+      : '您收到这个邮件是为了确认您的电子邮件地址';
 
     const templateData = {
       name: name || '',
@@ -140,7 +140,7 @@ export class EmailService {
     return await this.sendEmail(to, subject, {
       bodyHeader: subject,
       bodyContent: htmlEmailContent,
-      footerText: 'You have received this email as an invitation to join ToolJet’s workspace',
+      footerText: '您收到这个邮件是因为您被其他用户邀请加入的轻应用平台Workspace',
       inviteUrl,
     });
   }
@@ -157,7 +157,7 @@ export class EmailService {
 
     return await this.sendEmail(to, subject, {
       bodyContent: htmlEmailContent,
-      footerText: 'You have received this email as because a request to reset your password was made',
+      footerText: '您收到这个邮件是因为您请求重置您的密码',
     });
   }
 

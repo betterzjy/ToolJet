@@ -404,8 +404,8 @@ class ViewerComponent extends React.Component {
           this.props.currentLayout === 'desktop'
             ? '100%'
             : this.props?.currentLayout === 'mobile'
-            ? `${this.state.deviceWindowWidth}px`
-            : '1292px',
+              ? `${this.state.deviceWindowWidth}px`
+              : '1292px',
         selectedComponent: null,
         dataQueries: dataQueries,
         currentPageId: currentPage.id,
@@ -728,8 +728,8 @@ class ViewerComponent extends React.Component {
     const navigationParamsString = navigationParams.env
       ? `env=${navigationParams.env}`
       : '' + navigationParams.version
-      ? `version=${navigationParams.version}`
-      : '';
+        ? `version=${navigationParams.version}`
+        : '';
 
     useEditorStore.getState().actions.updateEditorState({
       currentPageId: id,
@@ -767,9 +767,8 @@ class ViewerComponent extends React.Component {
       }
     }
 
-    const toNavigate = `/applications/${this.state.slug}/${handle}?${
-      !_.isEmpty(defaultParams) ? navigationParamsString : ''
-    }${queryParamsString ? `${!_.isEmpty(defaultParams) ? '&' : ''}${queryParamsString}` : ''}`;
+    const toNavigate = `/applications/${this.state.slug}/${handle}?${!_.isEmpty(defaultParams) ? navigationParamsString : ''
+      }${queryParamsString ? `${!_.isEmpty(defaultParams) ? '&' : ''}${queryParamsString}` : ''}`;
 
     this.props.navigate(toNavigate, {
       state: {
@@ -989,7 +988,7 @@ class ViewerComponent extends React.Component {
                           </>
                         )}
                       </div>
-                      <div
+                      {/* <div
                         className="powered-with-tj"
                         onClick={() => {
                           const url = `https://tooljet.com/?utm_source=powered_by_banner&utm_medium=${
@@ -1003,7 +1002,7 @@ class ViewerComponent extends React.Component {
                           <TooljetLogoIcon />
                         </span>
                         <TooljetLogoText fill={this.props.darkMode ? '#ECEDEE' : '#11181C'} />
-                      </div>
+                      </div> */}
                       {/* Following div is a hack to prevent showing mobile drawer navigation coming from left*/}
                       {isMobilePreviewMode && <div className="hide-drawer-transition" style={{ right: 0 }}></div>}
                       {isMobilePreviewMode && <div className="hide-drawer-transition" style={{ left: 0 }}></div>}

@@ -36,8 +36,8 @@ module.exports = {
       logo: {
         href: '/docs',
         alt: 'ToolJet Logo',
-        src: 'img/Logomark.svg',
-        srcDark: `img/Logomark_white.svg`,
+        src: 'img/Logomark_guoxin.svg',
+        srcDark: `img/Logomark_guoxin.svg`,
         width: 90
       },
       items: [

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import LogoLightMode from '@assets/images/Logomark.svg';
-import LogoDarkMode from '@assets/images/Logomark-dark-mode.svg';
+import LogoLightMode from '@assets/images/Logomark_guoxin.svg';
+import LogoDarkMode from '@assets/images/Logomark_guoxin.svg';
 import { redirectToDashboard } from '@/_helpers/routes';
 
 function OnboardingNavbar({ darkMode }) {
@@ -10,7 +10,7 @@ function OnboardingNavbar({ darkMode }) {
   return (
     <div className={`onboarding-navbar container-xl`}>
       <Link onClick={() => redirectToDashboard()}>
-        <Logo height="23" width="92" alt="tooljet logo" data-cy="page-logo" />
+        <Logo height="38" width="180" alt="tooljet logo" data-cy="page-logo" />
       </Link>
     </div>
   );

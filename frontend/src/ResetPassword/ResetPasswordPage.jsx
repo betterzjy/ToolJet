@@ -80,11 +80,11 @@ class ResetPasswordComponent extends React.Component {
                       className="common-auth-section-header reset-password-header"
                       data-cy="reset-password-page-header"
                     >
-                      Reset Password
+                      重置密码
                     </h2>
                     <div className="reset-password-input-container">
                       <label className="tj-text-input-label" data-cy="new-password-input-label">
-                        New Password
+                        请输入新密码
                       </label>
                       <div className="login-password">
                         <input
@@ -129,7 +129,7 @@ class ResetPasswordComponent extends React.Component {
                           )}
                         </div>
                         <span className="tj-input-helper-text" data-cy="password-helper-text">
-                          Password must be at least 5 characters
+                          密码必须包含至少5个字符
                         </span>
 
                         <span></span>
@@ -137,7 +137,7 @@ class ResetPasswordComponent extends React.Component {
                     </div>
                     <div className="reset-password-input-container">
                       <label className="tj-text-input-label" data-cy="confirm-password-input-label">
-                        Re-enter the password
+                        请再次输入新密码
                       </label>
                       <div className="login-password">
                         <input
@@ -181,7 +181,7 @@ class ResetPasswordComponent extends React.Component {
                           )}
                         </div>
                         <span className="tj-input-helper-text" data-cy="password-helper-text">
-                          Password must be at least 5 characters
+                          密码必须包含至少5个字符
                         </span>
 
                         <span></span>
@@ -205,7 +205,7 @@ class ResetPasswordComponent extends React.Component {
                           </div>
                         ) : (
                           <>
-                            <span>Reset password</span>
+                            <span>重置密码</span>
 
                             <EnterIcon
                               fill={
